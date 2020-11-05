@@ -1,0 +1,21 @@
+<template>
+    <lightning-card>
+        <lightning-breadcrumbs class="slds-m-around_small bread">
+            
+            <lightning-breadcrumb 
+            label="Home" 
+            href="https://brillio5-dev-ed.lightning.force.com/lightning/n/Home" 
+            onclick={handleparent}>
+            </lightning-breadcrumb>
+
+            <lightning-breadcrumb 
+            label="Products"
+            href={url}
+            onclick={handlechild}>
+            </lightning-breadcrumb>
+            
+            <c-tile product-name={productName}></c-tile>
+            
+        </lightning-breadcrumbs>
+    </lightning-card>
+</template>
